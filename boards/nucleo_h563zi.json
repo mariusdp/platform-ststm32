@@ -1,0 +1,46 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m33",
+    "extra_flags": "-DSTM32H5xx -DSTM32H563xx",
+    "f_cpu": "250000000L",
+    "mcu": "stm32h563zi",
+    "product_line": "STM32H563xx"
+  },
+  "connectivity": [
+    "can",
+    "ethernet"
+  ],
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "STM32H563ZI",
+    "onboard_tools": [
+      "stlink"
+    ],
+    "openocd_target": "stm32h5x",
+    "svd_path": "STM32H563.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "stm32cube",
+    "zephyr"
+  ],
+  "name": "ST Nucleo H563ZI",
+  "upload": {
+    "maximum_ram_size": 884736,
+    "maximum_size": 2097152,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "cmsis-dap",
+      "stlink",
+      "blackmagic",
+      "mbed"
+    ]
+  },
+  "url": "https://www.st.com/en/evaluation-tools/nucleo-h563zi.html",
+  "vendor": "ST"
+}
